@@ -8,6 +8,8 @@ This project is far from done, the current release is **just working**.
 Currently, the tool can only **read** files, and neither edit them, nor import-export them from/to other formats. These features will be
 added soon though.
 
+### Note
+Due to some issues with the used library, the further development of this tool might be delayed a while, since I have to create a custom FileType Library.
 
 ## TODO List
 
