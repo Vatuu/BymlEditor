@@ -53,6 +53,9 @@
             this.discordMarioInvite = new System.Windows.Forms.ToolStripMenuItem();
             this.zeldaDiscordInvite = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expandAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.collapseAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileNormal = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
@@ -69,24 +72,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(111, 595);
+            this.label1.Location = new System.Drawing.Point(111, 566);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 621);
+            this.label2.Location = new System.Drawing.Point(98, 592);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Type";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // boxId
             // 
-            this.boxId.Location = new System.Drawing.Point(135, 592);
+            this.boxId.Location = new System.Drawing.Point(135, 563);
             this.boxId.Name = "boxId";
             this.boxId.ReadOnly = true;
             this.boxId.Size = new System.Drawing.Size(458, 20);
@@ -94,7 +99,7 @@
             // 
             // boxType
             // 
-            this.boxType.Location = new System.Drawing.Point(135, 618);
+            this.boxType.Location = new System.Drawing.Point(135, 589);
             this.boxType.Name = "boxType";
             this.boxType.ReadOnly = true;
             this.boxType.Size = new System.Drawing.Size(458, 20);
@@ -102,7 +107,7 @@
             // 
             // boxValue
             // 
-            this.boxValue.Location = new System.Drawing.Point(135, 644);
+            this.boxValue.Location = new System.Drawing.Point(135, 615);
             this.boxValue.Name = "boxValue";
             this.boxValue.Size = new System.Drawing.Size(458, 20);
             this.boxValue.TabIndex = 6;
@@ -111,16 +116,17 @@
             // Value
             // 
             this.Value.AutoSize = true;
-            this.Value.Location = new System.Drawing.Point(98, 647);
+            this.Value.Location = new System.Drawing.Point(96, 618);
             this.Value.Name = "Value";
             this.Value.Size = new System.Drawing.Size(34, 13);
             this.Value.TabIndex = 7;
             this.Value.Text = "Value";
+            this.Value.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // linkGithub
             // 
             this.linkGithub.AutoSize = true;
-            this.linkGithub.Location = new System.Drawing.Point(604, 705);
+            this.linkGithub.Location = new System.Drawing.Point(604, 658);
             this.linkGithub.Name = "linkGithub";
             this.linkGithub.Size = new System.Drawing.Size(115, 13);
             this.linkGithub.TabIndex = 8;
@@ -133,7 +139,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label3.Location = new System.Drawing.Point(9, 705);
+            this.label3.Location = new System.Drawing.Point(9, 658);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 9;
@@ -156,7 +162,7 @@
             this.soonTMToolStripMenuItem});
             this.newToolStripMenuItem.Enabled = false;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.newToolStripMenuItem.Text = "New...";
             // 
             // soonTMToolStripMenuItem
@@ -168,7 +174,8 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -179,7 +186,7 @@
             this.fromJSONToolStripMenuItem});
             this.importToolStripMenuItem.Enabled = false;
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.importToolStripMenuItem.Text = "Import...";
             // 
             // fromXMLToolStripMenuItem
@@ -201,20 +208,20 @@
             this.toJSONToolStripMenuItem});
             this.exportToolStripMenuItem.Enabled = false;
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.exportToolStripMenuItem.Text = "Export...";
             // 
             // toXMLToolStripMenuItem
             // 
             this.toXMLToolStripMenuItem.Name = "toXMLToolStripMenuItem";
-            this.toXMLToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.toXMLToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.toXMLToolStripMenuItem.Text = "To XML";
             this.toXMLToolStripMenuItem.Click += new System.EventHandler(this.toXMLToolStripMenuItem_Click);
             // 
             // toJSONToolStripMenuItem
             // 
             this.toJSONToolStripMenuItem.Name = "toJSONToolStripMenuItem";
-            this.toJSONToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.toJSONToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.toJSONToolStripMenuItem.Text = "To JSON";
             // 
             // helpToolStripMenuItem
@@ -223,14 +230,14 @@
             this.linkByml,
             this.discordInvitesToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.helpToolStripMenuItem.Text = "Links";
             // 
             // linkByml
             // 
             this.linkByml.Name = "linkByml";
-            this.linkByml.Size = new System.Drawing.Size(167, 22);
-            this.linkByml.Text = "BYML File Format";
+            this.linkByml.Size = new System.Drawing.Size(175, 22);
+            this.linkByml.Text = "BYAML File Format";
             this.linkByml.Click += new System.EventHandler(this.bYMLFileFormatToolStripMenuItem_Click);
             // 
             // discordInvitesToolStripMenuItem
@@ -261,12 +268,36 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem,
+            this.viewToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(731, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.expandAllToolStripMenuItem,
+            this.collapseAllToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // expandAllToolStripMenuItem
+            // 
+            this.expandAllToolStripMenuItem.Name = "expandAllToolStripMenuItem";
+            this.expandAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.expandAllToolStripMenuItem.Text = "Expand all";
+            this.expandAllToolStripMenuItem.Click += new System.EventHandler(this.expandAllToolStripMenuItem_Click);
+            // 
+            // collapseAllToolStripMenuItem
+            // 
+            this.collapseAllToolStripMenuItem.Name = "collapseAllToolStripMenuItem";
+            this.collapseAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.collapseAllToolStripMenuItem.Text = "Collapse all";
+            this.collapseAllToolStripMenuItem.Click += new System.EventHandler(this.collapseAllToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -287,7 +318,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 727);
+            this.ClientSize = new System.Drawing.Size(731, 681);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkGithub);
             this.Controls.Add(this.Value);
@@ -338,6 +369,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.OpenFileDialog openFileNormal;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem expandAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem collapseAllToolStripMenuItem;
     }
 }
 
