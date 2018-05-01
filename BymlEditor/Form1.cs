@@ -62,6 +62,16 @@ namespace BymlEditor
             }
         }
 
+        private void expandAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tree.ExpandAll();
+        }
+
+        private void collapseAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tree.CollapseAll();
+        }
+
         #region Links
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
