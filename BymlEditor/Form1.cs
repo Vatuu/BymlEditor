@@ -91,7 +91,7 @@ namespace BymlEditor
 
         private void zeldaBotWModdingHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(" https://discord.gg/68YmVJX");
+            System.Diagnostics.Process.Start("https://discord.gg/68YmVJX");
         }
 
         #endregion
